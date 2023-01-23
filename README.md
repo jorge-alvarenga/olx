@@ -13,7 +13,8 @@ Com isso vou precisar de dados como não tenho nenhuma base de dados vou precisa
 
 Para o projeto vou criar um pipeline de ETL usando o AIRFLOW e a Dag vai ficar assim :
 
-![Captura de tela de 2023-01-23 12-48-42](https://user-images.githubusercontent.com/64050213/214084332-151550bb-ef0e-45db-831d-2a850d20e5fe.png)
+![Captura de tela de 2023-01-23 12-58-38](https://user-images.githubusercontent.com/64050213/214086646-add4e0ad-eefd-4091-b639-b39f9fe8d8bb.png)
+
 
 ![raspagem](https://user-images.githubusercontent.com/64050213/214081756-f168b009-d3db-41a1-9424-985b73eb8409.png) 1° Etapa – Web Scraping
 
