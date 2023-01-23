@@ -188,7 +188,7 @@ def Limpar():
 
 def subir_banco_de_dados():
   dataset_OLX = pd.read_csv('./dataset_OLX.csv')
-  conexao_pg = create_engine('postgresql://postgres:projetoolx123@olx.c8demqn6blrs.us-east-1.rds.amazonaws.com/postgres').connect()
+  conexao_pg = create_engine('postgresql://postgres:xxxxx@olx.c8demqn6blrs.us-east-1.rds.amazonaws.com/postgres').connect()
   dataset_OLX.to_sql( 
     name = 'olx',
     con = conexao_pg,
