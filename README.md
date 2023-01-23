@@ -4,6 +4,7 @@ A ideia desse projeto veio da necessidade de colocar a prova os conhecimentos qu
 ![Captura de tela de 2023-01-23 11-58-37](https://user-images.githubusercontent.com/64050213/214082540-f101c3e2-fff9-4b2a-9895-97d986fca47e.png)
 
 Pensei vou montar esse miniprojeto em cima dessa vaga, então comecei a fazer uma breve pesquisa sobre a OLX e achei essa apresentação muito bacana (https://www.infoq.com/br/presentations/data-science-na-olx/) onde fala de numero bem expressivos com um total de movimentação de R$ 80 bilhões na economia em 2016, que tem aproximadamente no ano de 2017 uma média de 12,5 milhões de anúncios ativos na plataforma e quase meio milhão de anúncios por dia, com a cada 1 minuto vendendo 50 itens ou seja é uma empresa que gera uma quantidade de dados gigantesca perfeito para criar um projeto. Dentre diversas linhas de produtos (coloca produto nisso!) que são anunciados na OLX escolhi o nicho de mercado de automotivo. A ideia é montar um dashboard no Power BI com alguns KPIs como a quantidade de anúncios, quais estados que geram mais anúncios, fabricante por estado e modelos etc. Fiz um pequeno esboço de como quero que fique o dashboard:
+
 ![dashboard](https://user-images.githubusercontent.com/64050213/214081770-0f9aeb50-fad6-4ebd-ad1b-f6d71d9fa616.png)
 
 Com isso vou precisar de dados como não tenho nenhuma base de dados vou precisar extrair do próprio site da OLX, depois vou tratar e depois criar um banco de dados para consumir pelo Power BI, ou seja, vou fazer o famoso ETL.
