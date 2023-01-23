@@ -10,6 +10,7 @@ import sqlalchemy
 from sqlalchemy import create_engine
 
 def limpar_modelo_por_marca(marca,modelo):
+  # Foi identificado que os separadores dos modelos que tem mais de uma palavra não são padronizados por isso que criamos essa função para colocar de forma correto para cada modelo.
   modelo = modelo.lower()
   marca = marca.lower()
   if marca == 'hitech-eletric':
