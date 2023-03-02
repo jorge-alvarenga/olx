@@ -1,5 +1,5 @@
 # olx
-https://app.powerbi.com/view?r=eyJrIjoiN2QwNGQ4MzItY2JlYS00MDEwLTgwOWMtNzM4NzRkOTJmMDhiIiwidCI6IjRhZDg5MTMyLWFmZWQtNDdhNC1hZjA3LWE4NDYxZTU0NmQ0NCJ9
+<iframe title="olx" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiN2QwNGQ4MzItY2JlYS00MDEwLTgwOWMtNzM4NzRkOTJmMDhiIiwidCI6IjRhZDg5MTMyLWFmZWQtNDdhNC1hZjA3LWE4NDYxZTU0NmQ0NCJ9" frameborder="0" allowFullScreen="true"></iframe>
 
 
 A ideia desse projeto veio da necessidade de colocar a prova os conhecimentos que venho adquirindo com os meus estudos na área de dados. Foi quando eu pensei em pegar uma vaga no LinkedIn e desenvolver um miniprojeto em cima dela. Procurando vagas na área dados encontrei a seguinte vaga na OLX: 
