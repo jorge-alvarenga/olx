@@ -1,5 +1,6 @@
 # olx
 
+![powerbi_logo-1](https://user-images.githubusercontent.com/64050213/222525970-b661e0e9-528c-4866-8e51-fab6afd432b5.png)
 
 <iframe title="olx" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiN2QwNGQ4MzItY2JlYS00MDEwLTgwOWMtNzM4NzRkOTJmMDhiIiwidCI6IjRhZDg5MTMyLWFmZWQtNDdhNC1hZjA3LWE4NDYxZTU0NmQ0NCJ9" frameborder="0" allowFullScreen="true"></iframe>
 
