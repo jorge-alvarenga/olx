@@ -1,6 +1,6 @@
 # olx
 
-![Projeto POWER BI]([https://user-images.githubusercontent.com/64050213/222525970-b661e0e9-528c-4866-8e51-fab6afd432b5.png](https://app.powerbi.com/view?r=eyJrIjoiN2QwNGQ4MzItY2JlYS00MDEwLTgwOWMtNzM4NzRkOTJmMDhiIiwidCI6IjRhZDg5MTMyLWFmZWQtNDdhNC1hZjA3LWE4NDYxZTU0NmQ0NCJ9))
+![Projeto POWER BI]([[https://user-images.githubusercontent.com/64050213/222525970-b661e0e9-528c-4866-8e51-fab6afd432b5.png](https://app.powerbi.com/view?r=eyJrIjoiN2QwNGQ4MzItY2JlYS00MDEwLTgwOWMtNzM4NzRkOTJmMDhiIiwidCI6IjRhZDg5MTMyLWFmZWQtNDdhNC1hZjA3LWE4NDYxZTU0NmQ0NCJ9)])
 
 
 A ideia desse projeto veio da necessidade de colocar a prova os conhecimentos que venho adquirindo com os meus estudos na área de dados. Foi quando eu pensei em pegar uma vaga no LinkedIn e desenvolver um miniprojeto em cima dela. Procurando vagas na área dados encontrei a seguinte vaga na OLX: 
