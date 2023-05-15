@@ -81,6 +81,8 @@ Corrigir Inconsistências: Realizaremos uma análise mais detalhada dos dados em
 Após a análise e os ajustes, os dados estarão prontos para serem inseridos no banco de dados. É importante ressaltar que essa etapa de limpeza e preparação dos dados é crucial para garantir resultados confiáveis e precisos nas análises subsequentes.
 
 Com os dados devidamente tratados, podemos prosseguir para a próxima etapa do projeto, que é a inserção dos dados no banco de dados para alimentar o dashboard no Power BI.
+
+
 ![banco_de_dados](https://user-images.githubusercontent.com/64050213/214081771-4cc89a06-3475-40a4-b1b1-22e515fcaa3f.png) 3° Etapa – Carregar
 
 Nesta fase do projeto, vamos criar um banco de dados na AWS RDS (Relational Database Service), estabelecer a conexão com o banco de dados e criar uma tabela para armazenar todos os dados coletados.
