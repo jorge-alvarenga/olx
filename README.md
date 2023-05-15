@@ -49,15 +49,55 @@ Ferramentas Utilizadas:
 *   Biblioteca beautifulsoup
 *   Biblioteca Pandas
 
+Após analisar o site da OLX, decidi criar um web scraping que percorrerá cada fabricante de carros e, em seguida, acessará cada modelo individualmente para obter a quantidade de anúncios por estado para cada modelo. Esses dados serão armazenados em um DataFrame do pandas e, posteriormente, serão salvos em formato CSV, seguindo a seguinte estrutura:
 
-Depois de estudar o site da OLX decidi criar um web scraping que vai ir em cada fabricante de carro, depois vai em modelo por modelo e pegar a quantidade de anúncios por estado de cada modelo e colocar em um Dataframe do pandas e depois salvar em CSV, seguindo a seguinte estrutura:
+Coluna 1: Fabricante (manufacturer)
+Coluna 2: Modelo (model)
+Coluna 3: Estado (state)
+Coluna 4: Quantidade de anúncios (ad_count)
+Essa estrutura permitirá a análise e manipulação dos dados de forma conveniente e flexível. Com o DataFrame do pandas preenchido com os dados extraídos do web scraping, será possível realizar diversas operações e análises, como agrupamentos por fabricante, contagens de anúncios por modelo e estados, entre outras análises exploratórias.
+
+Após a manipulação dos dados, o DataFrame poderá ser salvo em um arquivo CSV, garantindo que as informações coletadas sejam preservadas e possam ser facilmente compartilhadas ou utilizadas posteriormente em outras etapas do projeto, como a criação do dashboard no Power BI.
+
+Dessa forma, o web scraping, a estrutura do DataFrame e a exportação em formato CSV fornecerão os dados necessários para alimentar o pipeline de ETL e, posteriormente, criar o dashboard com os KPIs desejados para a análise dos anúncios de carros na OLX.
+
+Seguindo os seguintes de passos:
 
 ![raspagem2](https://user-images.githubusercontent.com/64050213/214081731-a4d34fed-054a-4a3b-ae7a-0db9d2baf85d.png)
 
 ![limpar](https://user-images.githubusercontent.com/64050213/214081757-427c351e-db38-4f11-bbed-0eb7298ba921.png) 2° Etapa – Transforma / Tratar
 
-Aqui vamos analisar os dados, verificar se tem algum dado faltando, se tem duplicata ,se tem algumas inconsistência, arrumar os dados para depois jogar no banco de dados.
 
+Nesta etapa do projeto, faremos uma análise dos dados extraídos para verificar se há alguma informação faltando, duplicatas ou inconsistências. O objetivo é garantir a qualidade dos dados antes de inseri-los no banco de dados.
+
+Usando as funcionalidades do pandas, faremos as seguintes verificações e ajustes:
+
+Verificar Dados Faltantes: Faremos uma verificação para identificar se há valores nulos ou ausentes em alguma coluna do DataFrame. Caso existam, poderemos decidir a melhor abordagem para lidar com esses dados, como preencher os valores faltantes com estimativas ou remover as linhas correspondentes, dependendo do contexto e do impacto nos resultados.
+
+Remover Duplicatas: Verificaremos se há registros duplicados no DataFrame com base nas colunas relevantes. Caso encontremos duplicatas, removeremos essas entradas para evitar distorções nos resultados e garantir a integridade dos dados.
+
+Corrigir Inconsistências: Realizaremos uma análise mais detalhada dos dados em busca de possíveis inconsistências ou erros, como valores inválidos ou discrepantes. Faremos as correções necessárias, seja excluindo esses registros ou aplicando transformações adequadas para garantir a consistência dos dados.
+
+Após a análise e os ajustes, os dados estarão prontos para serem inseridos no banco de dados. É importante ressaltar que essa etapa de limpeza e preparação dos dados é crucial para garantir resultados confiáveis e precisos nas análises subsequentes.
+
+Com os dados devidamente tratados, podemos prosseguir para a próxima etapa do projeto, que é a inserção dos dados no banco de dados para alimentar o dashboard no Power BI.
 ![banco_de_dados](https://user-images.githubusercontent.com/64050213/214081771-4cc89a06-3475-40a4-b1b1-22e515fcaa3f.png) 3° Etapa – Carregar
 
-Aqui vamos criar um banco de dados na AWS RDS, se conectar na base de dados e criar uma tabela com todos os dados coletados.
+Nesta fase do projeto, vamos criar um banco de dados na AWS RDS (Relational Database Service), estabelecer a conexão com o banco de dados e criar uma tabela para armazenar todos os dados coletados.
+
+Passos a seguir:
+
+Criar o banco de dados na AWS RDS: Vamos acessar a AWS Console e criar uma instância de banco de dados na AWS RDS. Faremos as configurações necessárias, como tipo de instância, capacidade de armazenamento e credenciais de acesso. Escolheremos um banco de dados relacional adequado para armazenar nossos dados, como MySQL, PostgreSQL ou outro compatível.
+
+Estabelecer a conexão com o banco de dados: Após criar o banco de dados na AWS RDS, utilizaremos as informações de conexão fornecidas pela AWS para nos conectarmos à instância do banco de dados. Utilizaremos uma biblioteca de conexão de banco de dados compatível com a linguagem de programação escolhida para o projeto.
+
+Criar a tabela: Com a conexão estabelecida, executaremos as consultas SQL necessárias para criar uma tabela no banco de dados. A estrutura da tabela será definida com base nos dados coletados, incluindo as colunas e os tipos de dados apropriados para cada uma delas. Certificaremos de mapear corretamente as colunas do DataFrame para as colunas da tabela do banco de dados.
+
+Inserir dados na tabela: Com a tabela criada, faremos a inserção dos dados coletados no banco de dados. Utilizaremos as funcionalidades adequadas da biblioteca de conexão de banco de dados para executar as instruções SQL necessárias e inserir cada linha do DataFrame na tabela.
+
+Após concluirmos esses passos, teremos nosso banco de dados na AWS RDS criado e uma tabela com todos os dados coletados devidamente inseridos. Isso nos permitirá utilizar esses dados como fonte para alimentar o dashboard no Power BI e realizar análises mais aprofundadas dos anúncios de carros na OLX.
+
+
+
+
+
